@@ -102,6 +102,7 @@ export interface Blocks {
    * @param {number?} index — index where to insert new Block
    * @param {boolean?} needToFocus - flag to focus inserted Block
    * @param {boolean?} replace - should the existed Block on that index be replaced or not
+   * @param {string?} id - block id: if no id then it will generate one
    */
   insert(
     type?: string,
@@ -110,6 +111,7 @@ export interface Blocks {
     index?: number,
     needToFocus?: boolean,
     replace?: boolean,
+    id?: string
   ): BlockAPI;
 
 
